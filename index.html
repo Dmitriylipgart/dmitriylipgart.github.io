@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="Carusel.css">
         <link rel="stylesheet" type="text/css" href="app/slick-master/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="app/slick-master/slick/slick-theme.css"/>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body>
         <header>
@@ -117,7 +118,9 @@
             <input class="inputform" type="tel" placeholder="Enter your phone number">
             <input class="inputform" type="email" placeholder="Enter your E-Mail">
             <input class="inputform" type="datetime" placeholder="Enter contact date">
-            <input type="submit" value="Submit" >
+            <input type="submit" value="Submit" class="g-recaptcha"
+                   data-sitekey="6Ldg-FIUAAAAAKX5XKROLus_WLeIg62H_U6vsj1k"
+                   data-callback="YourOnSubmitFn">
         </form>
 
             <div class="map">
