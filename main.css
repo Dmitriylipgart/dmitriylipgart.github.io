@@ -250,21 +250,21 @@ footer nav, .info{
 }
 
 
-@media only screen and (max-width:479px) {
- body{
-     width: 320px;
- }
+/*@media only screen and (max-width:320px) {*/
+ /*body{*/
+     /*width: 320px;*/
+ /*}*/
 
- .articles{
-    width: 100%;
- }
+ /*.articles{*/
+    /*width: 100%;*/
+ /*}*/
 
- form {
-    width: 80%;
- }
+ /*form {*/
+    /*width: 80%;*/
+ /*}*/
 
- .map {
-    width: 80%;
-    height: 40vw;
- }
-}
+ /*.map {*/
+    /*width: 80%;*/
+    /*height: 40vw;*/
+ /*}*/
+/*}*/
