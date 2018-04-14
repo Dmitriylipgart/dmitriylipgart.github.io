@@ -250,10 +250,8 @@ footer nav, .info{
 }
 
 
-@media only screen and (max-width:320px) {
- body{
-     width: 320px;
- }
+@media only screen and (max-width:800px) {
+
 
  .articles{
     width: 100%;
