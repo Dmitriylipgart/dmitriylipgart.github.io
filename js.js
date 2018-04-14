@@ -10,16 +10,9 @@ $(window).on('resize',
           checkMedia();
         }
 
-
-
-
-
   );
 
 });
-
-
-
 
 
   function checkMedia() {
