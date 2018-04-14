@@ -30,8 +30,8 @@ if (window.matchMedia('(max-width: 600px)').matches){
 
 $('.reviews').slick ({
                     infinite: true,
-                    slidesToShow: 4,
-                    slidesToScroll: 4
+                    slidesToShow: 3,
+                    slidesToScroll: 3
           });
 
 
