@@ -96,6 +96,10 @@ nav li:active {
     border-radius: 10px;
 }
 
+
+
+
+ 
 article img {
     width: 30%;
     height: auto;
@@ -129,6 +133,7 @@ article h1 {
     width: 30%;
     margin: 0 10px;
     padding: 10px 10px;
+    max-height: 120px;
     background-color: whitesmoke;
     -webkit-box-shadow: 2px 2px 3px #114B77;
     -moz-box-shadow: 2px 2px 3px #114B77;
@@ -218,8 +223,10 @@ form input[type="submit"] {
 /*Map*/
 
 .map {
-    width: 80%;
+    width: 60%;
     margin: 10px auto;
+
+    height: 24vw;
 
 }
 
@@ -240,4 +247,22 @@ footer nav, .info{
     color: white;
     text-shadow: 2px 2px 2px #114B77;
     margin-bottom: 10px;
+}
+
+
+@media only screen and (min-width : 480px) and (max-width : 600px) {
+
+
+ .articles{
+    width: 100%;
+ }
+
+ form {
+    width: 80%;
+ }
+
+ .map {
+    width: 80%;
+    height: 40vw;
+ }
 }
