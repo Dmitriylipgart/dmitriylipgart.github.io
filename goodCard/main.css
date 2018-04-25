@@ -1,0 +1,83 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: antiquewhite;
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    background-color: white;
+    position: fixed;
+    margin: 5% auto;
+    left: 10%;
+    right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img, .info{
+    width: 50%;
+    height: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.img{
+
+    background: url('img/earphones.png') center center no-repeat;
+    background-clip: content-box;
+    background-size: contain;
+    background-origin: content-box;
+}
+
+.info{
+    padding-right: 0;
+    padding-left: 3%;
+
+
+
+}
+.info h2, .info span{
+    display: block;
+    margin-top: 10%;
+    font-family: Arial, sans-serif;
+
+}
+
+.info h2{
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+.info .price{
+    margin-top: 5%;
+    font-size: 2em;
+}
+
+.info .description{
+    margin-bottom: 10%;
+    padding-right: 25%;
+}
+
+.info .button{
+    display: flex;
+    width: 45%;
+    height: 10%;
+    background-color: rgb(236, 116, 74);
+    margin-top: 10%;
+    box-sizing: border-box;
+
+
+}
+
+.button div{
+    display: inline-block;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: auto;
+
+}
+
