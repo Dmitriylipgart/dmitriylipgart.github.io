@@ -5,6 +5,7 @@
         <title>MyFirstPage</title>
         <link rel="stylesheet" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Caveat|Crimson+Text|Pacifico|Satisfy" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
         <script src="js/jquery-3.3.1.min.js"></script>
     </head>
     <body>
@@ -297,17 +298,47 @@
 
 
 
-        <a href="#"><b>Вернуться в начало</b></a>
+        <a href="#" class="fas fa-arrow-alt-circle-up"></a>
 
         <script>
             $(window).scroll(function(){
                 if($(window).scrollTop()>500){
                     $('.side_menu').show()
+                    $('.fa-arrow-alt-circle-up').show()
+
                 } else {
                     $('.side_menu').hide()
+                    $('.fa-arrow-alt-circle-up').hide()
                 }
             })
 
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+
+                $("nav").on("click","a", function (event) {
+                    event.preventDefault();
+                    var id  = $(this).attr('href'),
+                        top = $(id).offset().top;
+                    $('body,html').animate({scrollTop: top}, 1000);
+                });
+
+                $(".side_menu").on("click","a", function (event) {
+                    event.preventDefault();
+                    var id  = $(this).attr('href'),
+                        top = $(id).offset().top;
+                    $('body,html').animate({scrollTop: top}, 1000);
+                });
+
+                $('.fa-arrow-alt-circle-up').click(function() {
+                    $('body,html').animate({scrollTop:0},500);
+                    return false;
+                });
+
+
+            });
         </script>
 
     </body>

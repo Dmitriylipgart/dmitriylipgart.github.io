@@ -3,6 +3,10 @@
     margin:0;
 }
 
+body{
+    background: url("img/back1.jpg") center/contain;
+}
+
 .header{
     width: 100%;
     height: 90vh;
@@ -42,7 +46,9 @@ h1{
 }
 
 h1, h2{
-    font-family: 'Caveat', cursive, sans-serif;
+
+    /*font-family: 'Caveat', cursive, sans-serif;*/
+    font-family: 'Segoe Print', cursive, sans-serif;
 }
 
 nav > ul{
@@ -66,15 +72,19 @@ nav {
 nav > ul li a, .side_menu > ul li a{
     display: block;
     text-decoration: none;
-    color: white;
+    color: #fff5d3;
     background-color: #313134;
     padding: 10px 30px 10px 40px;
     font-size: 18px;
-    /*width: 55%;*/
-    /*border: solid 1px white;*/
-    /*border-radius: 5px;*/
+    font-family: 'Verdana', cursive, sans-serif;
+    text-shadow: 2px 2px 2px black;
 
 }
+
+nav li > ul li a, .side_menu li > ul li a{
+    font-size: 14px;
+}
+
 nav > ul li, .side_menu > ul li{
     list-style: none;
 }
@@ -138,12 +148,20 @@ nav li:hover > ul, .side_menu li:hover > ul{
     position: fixed;
     right: 0;
     top: 35vh;
-    width: 150px;
+    /*width: 150px;*/
 }
 
 .side_menu > ul li a{
+}
 
-
+.fa-arrow-alt-circle-up{
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    font-size: 58px;
+    text-decoration: none;
+    color: #313134;
 }
 
 
