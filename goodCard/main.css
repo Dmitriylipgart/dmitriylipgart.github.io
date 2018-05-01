@@ -74,7 +74,7 @@ body{
 
 
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 540px) {
 
     .container{
         width: 100%;
@@ -111,10 +111,42 @@ body{
     }
 }
 
+
+@media screen and (max-width: 1023px) and (min-width: 541px) and (min-height: 480px){
+    .container{
+        width: 90%;
+        flex-direction: column;
+        height: 90vh;
+        margin: 5% auto;
+
+    }
+    .img, .info{
+        width: 100%;
+        height: 50%;
+        padding: 5%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .info h2{
+        text-align: center;
+    }
+
+
+    .info > div, .button a{
+        margin: 3% auto;
+        padding: 0;
+        text-align: center;
+    }
+    .info .description{
+        padding: 0 10%;
+    }
+}
+
 @media screen and (max-height: 420px) {
     .container{
-        width: 100%;
-        height: 100vh;
+        width: 90%;
+        height: 90vh;
 
     }
 
@@ -126,6 +158,13 @@ body{
 
     .info h2{
         font-size: 1.5em;
+    }
+
+    .info .price_desc, .info h2{
+        margin-top: 10%;
+    }
+    .info .price{
+        font-size: 1.4em;
     }
     .button a {
         max-width: 80%;
