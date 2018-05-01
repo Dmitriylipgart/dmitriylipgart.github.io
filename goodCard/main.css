@@ -72,6 +72,14 @@ body{
 
 }
 
+.button a:hover{
+    background-color: white;
+    color: rgb(236, 116, 74);
+    border: solid 2px rgb(236, 116, 74);
+    border-radius: 3px;
+    font-weight: 600;
+}
+
 
 
 @media screen and (max-width: 540px) {
