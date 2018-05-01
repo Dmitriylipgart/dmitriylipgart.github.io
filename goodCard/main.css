@@ -70,6 +70,7 @@ body{
     color: white;
     text-align: center;
 
+
 }
 
 .button a:hover{
@@ -78,6 +79,7 @@ body{
     border: solid 2px rgb(236, 116, 74);
     border-radius: 3px;
     font-weight: 600;
+
 }
 
 
