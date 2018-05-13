@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav [type="checkbox"]{
+    display: none;
+
+}
+
+nav label{
+    display: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 0px;
+    z-index: 2;
+
+}
+nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li a{
+    font: 22px 'Source Sans Pro';
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+
+.logo{
+    font: italic 44px Lobster;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    position: absolute;
+    margin: 5px 15px;
+    z-index: 2;
+}
+
+.container{
+background: center center/cover url("img/Bg33.png");
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+
+}
+
+.button{
+    position: absolute;
+    bottom: 200px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.button a{
+    color: #ffffff;
+    width: 160px;
+    text-align: center;
+    font: bold 1.2em 'Source Sans Pro' ;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    border-radius: 5%;
+    margin: 0 auto;
+    line-height: 45px;
+    background-color: #df6625;
+    /*border: solid 2px black;*/
+    border: solid 3px #df6625;
+    box-shadow: 0 5px 0 #be4a21;
+
+}
+
+.button a:hover{
+    color: #ffffff;
+    /*background-color: transparent;*/
+    background-color: #df8145;
+    border: solid 3px #df8145;
+}
+
+.nav li a:hover{
+    border-bottom: solid 3px white;
+
+}
+
+h2{
+    width: 70%;
+    margin: 0 auto;
+    font: bold 2em 'Source Sans Pro';
+    text-align: center;
+    line-height: 400%;
+    border-bottom: solid 2px black;
+}
+
+
+.services, .advantages, .skills, .portfolio, form{
+    font-family:  'Source Sans Pro', sans-serif;
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.portfolio{
+    flex-wrap: wrap;
+}
+
+.services, .advantages{
+    opacity: 0;
+    transition: opacity 2.2s ease;
+}
+
+figure > h3{
+    margin: 5% 0;
+}
+
+figure{
+    text-align: center;
+
+}
+
+.services_item > img{
+    height: 15vh;
+    margin: 5% 0;
+}
+
+figure > i{
+    font-size: 58px;
+    margin: 5% 0;
+}
+
+.skill{
+    width: 20%;
+    text-align: center;
+}
+
+.skill_name{
+    text-align: center;
+    font: 2em black;
+    margin: 20px;
+}
+.skill_bar{
+width: 100%;
+    position: relative;
+}
+
+.portfolio figure{
+    width: 33%;
+    height: 40vh;
+    overflow: hidden;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    background: #313134;
+    overflow: hidden;
+}
+
+.portfolio figure > img{
+    width: 115%;
+    margin: 0;
+    opacity: 1;
+    transition: width 0.35s, opacity 0.35s, transform 0.35s;
+    min-height: 100%;
+}
+
+.portfolio figcaption{
+    position: absolute;
+    text-align: center;
+    top: 20vh;
+
+
+}
+
+.portfolio figcaption h3{
+    color: #f8fff9;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 2px #000000;
+    transition: transform 0.35s;
+    transform: translate3d(0,-20px,0);
+}
+
+.portfolio figcaption p{
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(0,20px,0);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 10%;
+
+}
+
+.portfolio_item:hover h3,
+.portfolio_item:hover p
+{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+.portfolio_item:hover img {
+    width: 120%;
+
+}
+
+
+.reviews_wrapper{
+    background: url("img/business-3167295_1920.jpg") center/cover;
+    height: 70vh;
+
+}
+.reviews_aside{
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: relative;
+
+}
+
+.reviews_aside span{
+    display: block;
+    padding: 0 10%;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 2em;
+    text-align: center;
+margin: 20% auto;
+
+}
+
+.reviews_wrapper{
+    width: 100%;
+    position: relative;
+}
+
+
+.reviews_bside{
+    width: 70%;
+    height: 100%;
+    float: right;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.reviews{
+    margin-top: 15%;
+    margin-right: 10%;
+    float: right;
+    width: 70%;
+    box-shadow: 2px 2px 2px grey;
+
+}
+.review{
+    width: 40%;
+    background-color: #ffffff;
+    margin: 3px auto;
+}
+
+.review span{
+display: block;
+text-align: center;
+margin: 10% 10px;
+}
+
+
+.review img{
+    float: left;
+    width: 20%;
+    border-radius: 50%;
+    margin: 5%;
+}
+
+.reviews_button{
+    bottom: 180px;
+}
+
+
+form{
+    padding-top: 60px;
+    width: 35%;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+
+
+
+}
+
+.inputform{
+    width: 48%;
+    margin: 20px 0;
+    line-height: 2em;
+    border-radius: 3%;
+}
+
+textarea{
+    width: 100%;
+    height: 180px;
+    margin: 10px;
+    border-radius: 2%;
+
+}
+
+.footer_container{
+    width: 100%;
+    height: 80vh;
+    background: url("img/home-office3.jpg") center/cover #0a0a0a;
+    /*opacity: .6;*/
+    position: relative;
+
+}
+
+.footer_container .button{
+    position: static;
+    padding-top: 10px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: solid white 1px;
+    padding: 10px 0;
+}
+
+.footlogo{
+    font: italic 24px Lobster;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+.footer_container .fa-arrow-alt-circle-up{
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    font-size: 58px;
+    text-decoration: none;
+    color: #313134;
+}
+
+
+
+
